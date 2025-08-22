@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "name": "Classic Leather Watch",
+    "price": 120,
+    "description": "Elegant leather strap watch with waterproof design.",
+    "image": "https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?w=400"
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones",
+    "price": 89,
+    "description": "Noise-cancelling over-ear headphones with 30 hours battery life.",
+    "image": "https://images.unsplash.com/photo-1518444822660-00d89bcb1c05?w=400"
+  },
+  {
+    "id": 3,
+    "name": "Smartphone Pro Max",
+    "price": 999,
+    "description": "High-performance smartphone with triple camera system.",
+    "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400"
+  },
+  {
+    "id": 4,
+    "name": "Gaming Laptop",
+    "price": 1499,
+    "description": "Powerful gaming laptop with RTX graphics card and fast SSD.",
+    "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?w=400"
+  },
+  {
+    "id": 5,
+    "name": "Sports Running Shoes",
+    "price": 75,
+    "description": "Lightweight and comfortable running shoes for athletes.",
+    "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400"
+  },
+  {
+    "id": 6,
+    "name": "Wireless Bluetooth Speaker",
+    "price": 55,
+    "description": "Portable speaker with deep bass and waterproof build.",
+    "image": "https://images.unsplash.com/photo-1519671482749-fd09be7ccebf?w=400"
+  },
+  {
+    "id": 7,
+    "name": "Stylish Sunglasses",
+    "price": 45,
+    "description": "UV protected sunglasses with modern stylish design.",
+    "image": "https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?w=400"
+  },
+  {
+    "id": 8,
+    "name": "Office Ergonomic Chair",
+    "price": 210,
+    "description": "Ergonomic office chair with lumbar support and comfort padding.",
+    "image": "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=400"
+  },
+  {
+    "id": 9,
+    "name": "Designer Backpack",
+    "price": 65,
+    "description": "Durable and fashionable backpack with multiple compartments.",
+    "image": "https://images.unsplash.com/photo-1618221118493-9cfa1a6d6d6d?w=400"
+  },
+  {
+    "id": 10,
+    "name": "Digital DSLR Camera",
+    "price": 799,
+    "description": "Professional DSLR camera with high-resolution lens.",
+    "image": "https://images.unsplash.com/photo-1519183071298-a2962eadcddb?w=400"
+  }
+]
