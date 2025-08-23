@@ -4,14 +4,15 @@ import React, { useEffect, useState } from "react";
 
 export default function Page() {
   const [product, setProduct] = useState(null);
-  const { id } = useParams();
+  const id = useParams();
+  console.log(id);
 
   useEffect(() => {
     const fetchData = async () => {
       try {
         const res = await fetch("/products.json"); // public folder থেকে পড়া যাবে
         const data = await res.json();
-        const singleProduct = data.find((p) => p.id == id);
+        const singleProduct = data.find((p) => p.id == id?.id);
         setProduct(singleProduct);
       } catch (error) {
         console.error("Error fetching product:", error);
