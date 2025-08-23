@@ -30,6 +30,10 @@ export default function Page() {
 
   const { image, name, description, price } = product;
 
+  if (!product || product.length === 0) {
+    return <p>No products found</p>;
+  }
+
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-500 via-purple-500 to-pink-500 p-6">
       <div className="max-w-3xl w-full bg-white rounded-2xl shadow-2xl overflow-hidden">

@@ -9,7 +9,8 @@ import Typography from "@mui/material/Typography";
 import { Button } from "@mui/material";
 
 export default function ProductCard({product}) {
-  const {id,name,image} = product
+  const {name,image,id} = product
+  // console.log(product);
   return (
     <Card
       sx={{
