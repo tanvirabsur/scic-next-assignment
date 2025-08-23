@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import DashboardCTA from './DashboardCTA';
 
 export default function DashboardNav() {
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -85,6 +86,8 @@ export default function DashboardNav() {
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">📦 Products</a>
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">🧾 Orders</a>
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">⚙️ Settings</a>
+
+                            <DashboardCTA/>
                         </nav>
                     </aside>
                 </div>

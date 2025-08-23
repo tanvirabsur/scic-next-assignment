@@ -1,4 +1,5 @@
 import React from 'react'
+import DashboardCTA from './DashboardCTA'
 
 export default function LargeSidebar() {
     return (
@@ -34,13 +35,7 @@ export default function LargeSidebar() {
                     </li>
                 </ul>
 
-                <div className="divider my-4"></div>
-
-                <div className="text-sm text-neutral uppercase px-2 mb-2">Quick actions</div>
-                <div className="flex flex-col gap-2 px-2">
-                    <button className="btn btn-primary btn-sm">New Product</button>
-                    <button className="btn btn-outline btn-sm">Export</button>
-                </div>
+                <DashboardCTA/>
             </nav>
         </aside>
     )
