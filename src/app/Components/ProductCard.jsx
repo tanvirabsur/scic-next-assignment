@@ -10,7 +10,7 @@ import { Button } from "@mui/material";
 
 export default function ProductCard({product}) {
   const {name,image,id} = product
-  // console.log(product);
+  
   return (
     <Card
       sx={{

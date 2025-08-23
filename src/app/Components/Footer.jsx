@@ -1,6 +1,14 @@
+'use client';
+import { usePathname } from 'next/navigation'
 import React from 'react'
 
 export default function Footer() {
+    const pathname = usePathname();
+    console.log(pathname);
+    const dashnoard = pathname.includes('dashboard')
+    if (dashnoard) {
+        return <></> // Hide Footer on dashboard routes
+    }
     return (
         <>
             <footer className="footer sm:footer-horizontal bg-base-200 text-base-content p-10">

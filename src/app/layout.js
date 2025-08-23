@@ -1,9 +1,10 @@
+
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "./Components/Footer";
 import Navbar from "./Components/Navbar";
-import { SessionProvider } from "next-auth/react"
 import Providers from "./provider/provider";
+// import { usePathname } from "next/navigation";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -20,12 +21,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  // const pathname = usePathname()
+  // console.log(pathname);
   return (
     <html lang="en" data-theme="light">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar />
+        {/* <CurrentPath/> */}
         <Providers>
           {children}
         </Providers>

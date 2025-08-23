@@ -2,10 +2,19 @@
 import Link from 'next/link';
 import React, { useState } from 'react'
 import { Menu, X } from "lucide-react";
+import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
+    const pathname = usePathname();
+    console.log(pathname);
     const [isOpen, setIsOpen] = useState(false);
+    const dashnoard = pathname.includes('dashboard')
+    
+    if (dashnoard) {
+        return <></> // Hide Navbar on dashboard routes
+    }
     return (
+
         <nav className="bg-white shadow-md sticky w-full z-20 top-0 left-0">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center h-16">
