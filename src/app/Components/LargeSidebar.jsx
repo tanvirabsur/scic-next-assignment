@@ -16,7 +16,7 @@ export default function LargeSidebar() {
                         </a>
                     </li>
                     <li>
-                        <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">
+                        <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="/dashboard/products">
                             <span className="w-6 text-center">📦</span>
                             <span>Products</span>
                         </a>

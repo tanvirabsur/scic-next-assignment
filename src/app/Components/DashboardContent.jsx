@@ -1,4 +1,6 @@
 import React from 'react'
+import Table from './Table'
+import Link from 'next/link'
 
 export default function DashboardContent() {
     return (
@@ -12,7 +14,8 @@ export default function DashboardContent() {
 
                     <div className="hidden md:flex items-center gap-3">
                         <button className="btn btn-ghost">Share</button>
-                        <button className="btn btn-primary">Create</button>
+                        <Link className="btn btn-primary" href={'/dashboard/createproduct'}>Create</Link>
+                        {/* <button >Create</button> */}
                     </div>
                 </div>
 
@@ -64,36 +67,7 @@ export default function DashboardContent() {
                     <div className="col-span-2 bg-white shadow-sm rounded-lg p-4">
                         <h2 className="font-semibold mb-3">Recent Orders</h2>
                         <div className="overflow-auto">
-                            <table className="table w-full">
-                                <thead>
-                                    <tr>
-                                        <th>Order</th>
-                                        <th>Customer</th>
-                                        <th>Status</th>
-                                        <th className="text-right">Total</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>#1021</td>
-                                        <td>Emma</td>
-                                        <td><span className="badge badge-sm badge-info">Processing</span></td>
-                                        <td className="text-right">$129.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#1020</td>
-                                        <td>Liam</td>
-                                        <td><span className="badge badge-sm badge-success">Completed</span></td>
-                                        <td className="text-right">$59.00</td>
-                                    </tr>
-                                    <tr>
-                                        <td>#1019</td>
-                                        <td>Olivia</td>
-                                        <td><span className="badge badge-sm badge-warning">Pending</span></td>
-                                        <td className="text-right">$39.00</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <Table/>
                         </div>
                     </div>
 

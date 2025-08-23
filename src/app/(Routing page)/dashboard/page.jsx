@@ -10,10 +10,10 @@ export default function Dashboard() {
 
   return (
     <div className="min-h-screen bg-base-200">
-      <DashboardNav/>
+
 
       <div className="flex">
-        <LargeSidebar/>
+        
         <DashboardContent/>
       </div>
       

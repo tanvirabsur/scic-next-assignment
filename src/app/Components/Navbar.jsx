@@ -6,7 +6,7 @@ import { usePathname } from 'next/navigation';
 
 export default function Navbar() {
     const pathname = usePathname();
-    console.log(pathname);
+    // console.log(pathname);
     const [isOpen, setIsOpen] = useState(false);
     const dashnoard = pathname.includes('dashboard')
     
@@ -28,8 +28,8 @@ export default function Navbar() {
                         <Link href="/" className="text-gray-700 hover:text-blue-600 transition">
                             Home
                         </Link>
-                        <Link href="/shop" className="text-gray-700 hover:text-blue-600 transition">
-                            Shop
+                        <Link href="/dashboard" className="text-gray-700 hover:text-blue-600 transition">
+                            Dashboard
                         </Link>
                         <Link href="/about" className="text-gray-700 hover:text-blue-600 transition">
                             About

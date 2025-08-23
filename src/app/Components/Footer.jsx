@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Footer() {
     const pathname = usePathname();
-    console.log(pathname);
+    // console.log(pathname);
     const dashnoard = pathname.includes('dashboard')
     if (dashnoard) {
         return <></> // Hide Footer on dashboard routes

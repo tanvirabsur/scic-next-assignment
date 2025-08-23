@@ -83,7 +83,7 @@ export default function DashboardNav() {
 
                         <nav className="space-y-3">
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">🏠 Overview</a>
-                            <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">📦 Products</a>
+                            <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="/dashboard/products">📦 Products</a>
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">🧾 Orders</a>
                             <a className="flex items-center gap-3 p-2 rounded-lg hover:bg-primary/5" href="#">⚙️ Settings</a>
 
