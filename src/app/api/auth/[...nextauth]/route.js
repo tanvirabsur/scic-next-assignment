@@ -19,23 +19,16 @@ console.log(process.env.GOOGLE_CLIENT_ID);
       },
       async authorize(credentials) {
         console.log(credentials);
-        // এখানে DB থেকে check করবে
-        if (
-          credentials.email === "test@gmail.com" &&
-          credentials.password === "123456"
-        ) {
-          return { id: "1", name: "Test User", email: "test@gmail.com" }
+        const user = { id: "1", name: "J Smith", email: "jsmith@example.com" }
+
+        if (user) {
+          return user
         }
         return null
       }
     })
   ],
-  pages: {
-    signIn: "/auth/login",   // Custom Login Page
-    // error: "/auth/error",    // Optional
-    // newUser: "/auth/register" // Registration Page
-  },
-  secret: process.env.NEXTAUTH_SECRET,
+  
 }
 
 const handler = NextAuth(authOptions)

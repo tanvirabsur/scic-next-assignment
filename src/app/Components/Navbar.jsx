@@ -3,6 +3,7 @@ import Link from 'next/link';
 import React, { useState } from 'react'
 import { Menu, X } from "lucide-react";
 import { usePathname } from 'next/navigation';
+import { signIn } from 'next-auth/react';
 
 export default function Navbar() {
     const pathname = usePathname();
@@ -37,6 +38,7 @@ export default function Navbar() {
                         <Link href="/contact" className="text-gray-700 hover:text-blue-600 transition">
                             Contact
                         </Link>
+                        <button onClick={()=>{signIn()}} className='btn'>login</button>
                     </div>
 
                     {/* Mobile menu button */}
